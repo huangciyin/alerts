@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>Alerts Demo</title>
+	<link rel="stylesheet" href="css/Alerts.css">
+</head>
+<body>
+	<div style="width: 960px;margin: auto;text-align: center;">
+			<h2>Alerts Demo By HCY</h2> 
+			<textarea style="width: 100%;min-height: 590px;">
+						$.Alerts({
+						   	title: 'Alerts Demo',
+					        message: '提示信息',
+					        width: 250,
+					        cssClass: 'Alerts',      // 提示框的样式
+					        type: 'confirm',            // 对话框类型 alert 或 confirm 或 none
+					        okButton: '确定',         // 确定按钮的文字
+					        cancelButton: '取消',     // 取消按钮的文字
+					        isOverlay: true,          // 是否显示遮罩
+					        overlayColor: '#000',     // 遮罩的颜色
+					        overlayOpacity: 0.5,      // 遮罩透明度
+					        overlaySpeed: 'slow',     // 遮罩显示或隐藏的速度
+					        fixed: true, 		      // 是否静止定位 // 有遮罩时默认为ture
+					        follow: null, 		      // 是否跟随自定义元素来定位，跟踪元素时忽略遮罩
+					        followX: 0, 			  // 相对于自定义元素的X坐标的偏移
+					        followY: 0, 			  // 相对于自定义元素的Y坐标的偏移
+					        hasTitle: true,
+					        zIndex: 10000,
+					        boxSpeed: 'fast',         // 提示框显示或隐藏的速度
+					        show: 'fadeIn',           // 提示框显示的方式
+					        useIframe: false,
+					        top: "25%",
+					        persistent: true,
+					        warningClass: 'warning',
+					        autoClose: 0,             // 自动关闭的时间
+					        loaded: function () { // 加载完成触发的事件
+					       		//alert("加载完成触发的事件");
+					        },  
+					        submit: function () { // 返回false时可以阻止对话框关闭和回调函数的调用
+					        	//alert("您选择了确定");
+					        	return true; 
+					        }, 
+					        callback: function () { // 回调函数
+					        	//alert("回调函数")
+					         }
+						});
+			</textarea>
+	</div>
+	<script type="text/javascript" src="js/jquery.source.js"></script>	
+	<script type="text/javascript" src="js/Alerts.js"></script>	
+	<script type="text/javascript">
+	$(function(){
+			$.Alerts({
+			   	title: 'Demo',
+		        message: '提示信息',
+		        width: 250,
+		        cssClass: 'Alerts',      // 提示框的样式
+		        type: 'confirm',            // 对话框类型 alert 或 confirm 或 none
+		        okButton: '确定',         // 确定按钮的文字
+		        cancelButton: '取消',     // 取消按钮的文字
+		        isOverlay: true,          // 是否显示遮罩
+		        overlayColor: '#000',     // 遮罩的颜色
+		        overlayOpacity: 0.5,      // 遮罩透明度
+		        overlaySpeed: 'slow',     // 遮罩显示或隐藏的速度
+		        fixed: true, 		      // 是否静止定位 // 有遮罩时默认为ture
+		        follow: null, 		      // 是否跟随自定义元素来定位，跟踪元素时忽略遮罩
+		        followX: 0, 			  // 相对于自定义元素的X坐标的偏移
+		        followY: 0, 			  // 相对于自定义元素的Y坐标的偏移
+		        hasTitle: true,
+		        zIndex: 10000,
+		        boxSpeed: 'fast',         // 提示框显示或隐藏的速度
+		        show: 'fadeIn',           // 提示框显示的方式
+		        useIframe: false,
+		        top: "45%",
+		        persistent: true,
+		        warningClass: 'warning',
+		        autoClose: 0,             // 自动关闭的时间
+		        loaded: function () { // 加载完成触发的事件
+		       		//alert("加载完成触发的事件");
+		        },  
+		        submit: function () { // 返回false时可以阻止对话框关闭和回调函数的调用
+		        	//alert("您选择了确定");
+		        	return true; 
+		        }, 
+		        callback: function () { // 回调函数
+		        	//alert("回调函数")
+		         }
+			});
+	});
+$.Alerts({
+			hasTitle:false,
+	        message: 'Demo...',
+	        cssClass: 'kAlerts',      // 提示框的样式
+	        width: 205,
+	        type: 'confirm',            // 对话框类型 alert 或 confirm 或 none
+	        isOverlay: false,          // 是否显示遮罩
+	        okButton: '',         
+       		cancelButton: '', 
+	        submit: function () { // 返回false时可以阻止对话框关闭和回调函数的调用
+	        	alert("确定")
+	        	return false; 
+	        },
+	        cancel:function(){
+	        	$('.kAlerts').remove();
+	        	return false; 
+	        }
+		});
+	</script>	
+</body>
+</html>
