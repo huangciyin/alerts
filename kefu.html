@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>kefu demo</title>
+	<link rel="stylesheet" href="css/kefu.css">
+</head>
+<body>
+    <p>客服demo，见右边</p>
+	<script type="text/javascript" src="js/jquery.source.js"></script>	
+	<script type="text/javascript" src="js/alerts.js"></script>	
+	<div class="kf_qq_r">
+    	<a id="isread-text" href="#"></a>
+    </div>
+	
+	<script type="text/javascript">
+	$(function(){
+		$("#isread-text").click(popTips);
+		var message_html = '<div id="kefu" style="display:block;height:400px;"> \
+    <div id="simTestContent" class="simScrollCont"> \
+        <div class="mainlist"> \
+            <div class="kf_qq_li"> \
+                <div class="kf_qq_li_left kf_qq_li_1"> \
+                </div> \
+                <div class="kf_qq_li_right"> \
+                    <div class="kf_r_t"> \
+                        <span> \
+                            咨询QQ： \
+                        </span> \
+                        <a class="qyqq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=353735614&amp;site=qq&amp;menu=yes"> \
+                            在线咨询 \
+                        </a> \
+                        <span style="padding-left:19px;"> \
+                            联系电话：400-007-9085 \
+                        </span> \
+                    </div> \
+                    <div class="kf_r_d"> \
+                        咨询QQ与联系电话采用集中调度，多人值班，受理所有业务 \
+                    </div> \
+                </div> \
+            </div> \
+            <div class="kf_qq_li"> \
+                <div class="kf_qq_li_left kf_qq_li_2"> \
+                </div> \
+                <div class="kf_qq_li_right"> \
+                    <div class="kf_qq_c"> \
+                        <ul> \
+                            <li> \
+                                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2485049217&amp;site=qq&amp;menu=yes"> \
+                                    咨询-婉凝 \
+                                </a> \
+                            </li> \
+                            <li> \
+                                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2087692971&amp;site=qq&amp;menu=yes"> \
+                                    咨询-家华 \
+                                </a> \
+                            </li> \
+                            <li> \
+                                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2546479939&amp;site=qq&amp;menu=yes"> \
+                                    咨询-灵儿 \
+                                </a> \
+                            </li> \
+                        </ul> \
+                    </div> \
+                    <div class="kf_r_d"> \
+                        业务相关，请咨询售前客服。为避免丢失消息，请尽量添加好友 \
+                    </div> \
+                </div> \
+            </div> \
+            <div class="kf_qq_li"> \
+                <div class="kf_qq_li_left kf_qq_li_3"> \
+                </div> \
+                <div class="kf_qq_li_right"> \
+                    <div class="kf_qq_c"> \
+                        <ul> \
+                            <li> \
+                                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=353735614&amp;site=qq&amp;menu=yes"> \
+                                    支持-技术 \
+                                </a> \
+                            </li> \
+                            <li> \
+                                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=353735614&amp;site=qq&amp;menu=yes"> \
+                                    支持-推广 \
+                                </a> \
+                            </li> \
+                            <li> \
+                                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=353735614&amp;site=qq&amp;menu=yes"> \
+                                    意外情况处理 \
+                                </a> \
+                            </li> \
+                        </ul> \
+                    </div> \
+                    <div class="kf_r_d"> \
+                        售后问题处理，请咨询售后技术。为避免丢失消息，请尽量添加好友 \
+                    </div> \
+                </div> \
+            </div> \
+            <div class="kf_qq_li" style="background:none;"> \
+                <div class="kf_qq_li_left kf_qq_li_4"> \
+                </div> \
+                <div class="kf_qq_li_right"> \
+                    <div class="ke_qq_jl ke_qq_jl_l"> \
+                        <div class="jl_left"> \
+                            付经理： \
+                        </div> \
+                        <div class="jl_right"> \
+                            <div class="jl_call"> \
+                                131-0060-0295 \
+                            </div> \
+                            <div class="jl_qq"> \
+                                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=353735614&amp;site=qq&amp;menu=yes"> \
+                                    商务合作 \
+                                </a> \
+                            </div> \
+                        </div> \
+                        <p style="font-size:13px;padding-top:3px;"> \
+                            处理：代理、合作、大客户等 \
+                        </p> \
+                    </div> \
+                    <div class="ke_qq_jl"> \
+                        <div class="jl_left"> \
+                            胡经理： \
+                        </div> \
+                        <div class="jl_right"> \
+                            <div class="jl_call"> \
+                                158-7241-7255 \
+                            </div> \
+                            <div class="jl_qq"> \
+                                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2087692971&amp;site=qq&amp;menu=yes"> \
+                                    投诉建议 \
+                                </a> \
+                            </div> \
+                        </div> \
+                        <p style="font-size:13px;padding-top:3px;"> \
+                            处理：投诉、意见、建议等 \
+                        </p> \
+                    </div> \
+                    <div style="clear:both"> \
+                    </div> \
+                    <p style="color:#FF0000;font-size:16px;margin-top:0;"> \
+                        我们一直在努力!&nbsp;&nbsp;我们会全力以赴满足您的需求! \
+                    </p> \
+                </div> \
+            </div> \
+        </div> \
+    </div> \
+</div>';
+		function popTips(){
+			$.alerts({
+			   	title: '客服中心(点击按钮可通过QQ进行沟通，请确认启动QQ)',
+		        message: message_html,
+		        width: 620,
+		        cssClass: 'kefu',      // 提示框的样式
+		        type: 'none',            // 对话框类型 alert 或 confirm 或 none
+		        isOverlay: true,          // 是否显示遮罩
+		        overlayColor: '#000',     // 遮罩的颜色
+		        overlayOpacity: 0.5,      // 遮罩透明度
+		        overlaySpeed: 'slow',     // 遮罩显示或隐藏的速度
+		        fixed: true, 		      // 是否静止定位 // 有遮罩时默认为ture
+		        follow: null, 		      // 是否跟随自定义元素来定位，跟踪元素时忽略遮罩
+		        hasTitle: true,
+		        zIndex: 10000,
+		        boxSpeed: 'fast',         // 提示框显示或隐藏的速度
+		        show: 'fadeIn',           // 提示框显示的方式
+		        useIframe: true,
+		        top: "20%",
+		        persistent: true,
+		        warningClass: 'warning',
+			});
+		}
+	});
+	</script>	
+</body>
+</html>

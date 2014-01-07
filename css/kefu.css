@@ -1,0 +1,239 @@
+.kf_qq_r{
+  width:52px;
+  height:174px;
+  position:fixed;
+  top:200px;
+  right:-10px;
+}
+.kf_qq_r a{
+   background:url(../images/qq_kf.png) no-repeat -81px -66px;
+   display:block;
+   width:52px;
+   height:174px;
+}
+.kf_qq_r a:hover{
+  opacity: 0.8;
+}
+.kefu {}
+
+/*弹出窗口*/
+.kefu a
+{
+    color: #2BBFD5;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+.kefu a:hover
+{
+    text-decoration: underline;
+}
+.kefu a:focus
+{
+    outline: 0 none;
+}
+.kefu
+{
+    position: fixed;
+    top: 300px;
+    left: 300px;
+    background: #CCC;
+    background: rgba(150,150,150,0.5);
+    right: 12px;
+    padding: 4px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+.kefu .container
+{
+    border: 1px solid #A0A0A0;
+    background: #FFF;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+.kefu .title
+{
+    position: relative;
+    background: url(../images/bg_dialog.png) repeat-x 0 0;
+    height: 27px;
+    line-height: 27px;
+    padding: 0 10px;
+    font-weight: 600;
+    -moz-border-radius: 5px 5px 0 0;
+    -khtml-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+.kefu .title .close
+{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../images/d_close.png") no-repeat scroll 0 0 transparent;
+}
+.kefu .title .close:hover
+{
+    background-image: url("../images/d_close_h.png");
+    text-decoration: none;
+}
+.kefu .content
+{
+    padding: 15px 10px;
+    text-align: center;
+}
+.mainlist{
+  width:100%;
+}
+
+.kf_qq_li{
+  padding:10px 0;
+  background: url(../images/qq_kf_line.gif) no-repeat center bottom;
+  float:left;
+  width:100%;
+}
+.kf_qq_li .kf_qq_li_left{
+  width:175px;
+  float:left;
+  background-image:url(../images/qq_kf.png);
+  margin-right:22px;
+  height:50px;
+}
+.kf_qq_li .kf_qq_li_right{
+  width:394px;
+  float:left;
+  font-family:"微软雅黑";
+  color:#333;
+}
+.kf_qq_li_1{
+  background-position:3px -262px;
+}
+.kf_qq_li_2{
+  background-position:3px -355px;
+}
+.kf_qq_li_3{
+  background-position:0px -425px;
+}
+.kf_qq_li_4{
+  background-position:0px -510px;
+}
+.kf_r_t{
+  width:100%;
+  float:left;
+  padding-bottom:4px;
+}
+.kf_r_t span{
+  font-size:16px;
+  float:left;
+  padding-top:3px;
+}
+.kf_r_t .qyqq{
+  width:102px;
+  height:24px;
+  line-height:24px;
+  font-size:15px;
+  color:#fff;
+  background:#3A9EDF;
+  display:block;
+  text-align:center;
+  float:left;
+  font-weight:bold;
+}
+
+.kf_qq_c{
+  width:100%;
+  float:left;
+  overflow:hidden;
+}
+.kf_qq_c ul{
+  width:408px;
+}
+.kf_qq_c ul li{
+   width:93px;
+   height:23px;
+   float:left;
+   margin-right:7px;
+   display:inline;
+   margin-bottom:7px;
+   font-family:"宋体";
+}
+.kf_qq_c ul li a{
+  width:93px;
+  height:23px;
+  line-height:23px;
+  display:block;
+  color:#333;
+  text-align:center;
+  font-size:13px;
+  background:url(../images/qq_kf.png) -51px -654px;
+}
+.kf_qq_c ul a:hover{
+  background:url(../images/qq_kf.png) -51px -685px;
+  color:#fff;
+}
+.kf_r_d{
+    border-top: 1px solid #CCCCCC;
+    float: left;
+    font-size: 12px;
+    padding-top: 4px;
+    width: 100%;
+}
+.ke_qq_jl{
+  width:189px;
+  float:left;
+}
+.ke_qq_jl_l{
+  background: url(../images/kf_qq_line2.jpg) no-repeat right  top;
+  min-height:100px;
+  margin-right:13px;
+}
+.ke_qq_jl p{
+  line-height:20px;
+  display:block;
+  float:left;
+  width:100%;
+}
+.ke_qq_jl .jl_left{
+  float:left;
+  width:53px;
+  font-size:13px;
+}
+.ke_qq_jl .jl_right{
+  float:left;
+  width:134px;
+  font-size:13px;
+  line-height:20px;
+}
+.ke_qq_jl .jl_right .jl_call{
+  padding-left:24px;
+  float:left;
+  display:block;
+  background:url(../images/qq_kf.png) -77px -590px;
+  padding-bottom:2px;
+}
+.ke_qq_jl .jl_right .jl_qq{
+  padding-left:25px;
+  float:left;
+  display:block;
+  background:url(../images/qq_kf.png) -77px -609px;
+}
+.ke_qq_jl .jl_right .jl_qq a{
+  width:93px;
+  height:23px;
+  line-height:23px;
+  display:block;
+  color:#333;
+  text-align:center;
+  font-size:13px;
+  background:url(../images/qq_kf.png) -51px -654px;
+}
+.ke_qq_jl .jl_right .jl_qq a:hover{
+  background:url(../images/qq_kf.png) -51px -685px;
+  color:#fff;
+}
